@@ -18,6 +18,7 @@ if ( ! defined( 'WPINC' ) ) {
  */
 function owl_scripts() {
   wp_enqueue_style( 'owl-carousel', plugins_url( 'owl.carousel.css', __FILE__ ) );
+  wp_enqueue_style( 'owl-carousel-theme', plugins_url( 'owl.theme.css', __FILE__ ) );
   wp_enqueue_script( 'owl-carousel-js', plugins_url( 'owl.carousel.min.js', __FILE__ ) , array( 'jquery' ), '20160210', true );
 }
 add_action( 'wp_enqueue_scripts', 'owl_scripts' );
